@@ -1,0 +1,75 @@
+/* 
+#757575 основной цвет
+#212121 цвет заголовков
+#2F303A футер заливка
+#F5F4FA доп заливка
+#E5E5E5 основная заливка
+#FFFFFF цвет текста героя
+#2196F3 цвет ховер
+
+#000000 logo
+
+ */
+ :root {
+    --primary-text-color :#757575 ;
+    --title-text-color: #212121 ;
+    --acent-color: #2196F3;
+
+ }
+ body {
+    background-color: #E5E5E5;
+    color: var(--primary-text-color) ;
+ }
+ ul {
+    list-style: none;
+ }
+ .logo {
+    color: var(--acent-color) ;
+ }
+ .logo-header {
+    color: #000000
+ }
+ .logo-footer {
+color: #FFFFFF  ;
+ }
+ /* site-nav */
+ .site-nav .list {
+    color:  var(--title-text-color);
+ }
+ .site-nav .list:hover, 
+ .site-nav .list:focus{
+    color: var(--acent-color);
+}
+.site-info .list:hover, 
+.site-info .list:focus{
+    color: var(--acent-color);
+}
+
+.section-title {
+    color: var(--title-text-color) ;
+}
+/* hero */
+.hero-title {
+    color: #FFFFFF;
+}
+.hero-button {
+    background-color: var(--acent-color);
+    color: #FFFFFF;
+}
+
+/* benefits */
+.benefits .title {
+    color: var(--title-text-color)  
+}
+
+/* team */
+.team-title { 
+    color: var(--title-text-color);
+}
+/* product */
+.product-title {
+  color: var(--title-text-color);  
+}
+.product-text{
+    color: var(--primary-text-color);
+}
