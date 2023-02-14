@@ -9,6 +9,9 @@
 
 #000000 logo
 
+1230
+pading left/right 15
+
  */
  :root {
     --primary-text-color :#757575 ;
@@ -28,22 +31,43 @@
  }
  ul {
     list-style: none;
+    margin: 0px;
+    padding: 0px;
  }
+ h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+
+ }
+ .page-header {
+   
+    outline: 1px solid tomato;
+    
+ }
+ /* .main-menu {
+display: flex;
+align-items: center;
+ } */
+
  .logo {
+    
     color: var(--acent-color) ;
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+   
     
  }
  .logo-header {
+    
     color: #000000;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    
  }
  .logo-footer {
  color: #FFFFFF  ;
@@ -54,8 +78,21 @@ letter-spacing: 0.03em;
 text-decoration: none;
  }
  /* site-nav */
- 
+ .container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .site-nav {
+    /* display: flex; */
+    margin-left: 93px;
+ }
  .site-nav .link {
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
     color:  var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -71,12 +108,26 @@ text-decoration: none;
 .site-nav .link.current{
     color: var(--acent-color);
 }
+.site-nav .item{
+    margin-right: 50px;
+}
+.site-nav .item:last-child {
+    margin-right: 0px;
+}
+
 .site-info .list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 50px;
+    
     font-weight: 500;
     font-size: 14px; 
     text-decoration: none;
     
 } 
+.site-info .list :last-child  {
+    margin-right: 0px;
+}
 
 .site-info .list:hover, 
 .site-info .list:focus{
@@ -84,21 +135,31 @@ text-decoration: none;
 }
 
 .section-title {
+    margin-bottom: 50px;
     color: var(--title-text-color) ;
+
 }
 /* hero */
+.hero {
+    outline: 1px solid tomato;
+    text-align: center;
+}
 .hero-title {
     color: #FFFFFF;
-
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
 }
 .hero-button {
+    border-radius: 4px;
+    border: 4px solid transparent;
+    padding: 10px 32px;
+    min-width: 200px;
     background-color: var(--acent-color);
     color: #FFFFFF;
     font-weight: 700;
@@ -110,7 +171,18 @@ text-decoration: none;
 }
 
 /* benefits */
+.benefits {
+    
+    outline: 1px solid tomato;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+.benefits-list {
+    display: flex;
+}
 .benefits .title {
+    margin-bottom: 10px;
     color: var(--title-text-color)  ;
     font-weight: 700;
     font-size: 14px;
@@ -118,12 +190,21 @@ text-decoration: none;
    letter-spacing: 0.03em;
    text-transform: uppercase;
 }
+/* interesting */
+.interesting {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* team */
 .team {
     background-color: var(--bgd-second-color);
+    outline: 1px solid tomato;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team-title { 
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -138,16 +219,33 @@ text-decoration: none;
 
 /* product */
 .product-title {
+    margin-bottom: 4px;
   color: var(--title-text-color);  
+  font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
 }
 .product-text{
     color: var(--primary-text-color);
+    font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.03em;
 }
 
 /* Button */
 .buton {
+    border: 4px solid transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 73px ;
     color: var(--title-text-color);
     background-color: var(--bgd-second-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
     cursor: pointer;
 }
 .buton:hover,
@@ -157,5 +255,19 @@ text-decoration: none;
 }
 /* footer */
 .adress {
-    background-color: var(--bgd-footer-color)
+ padding-top: 60px;
+ padding-bottom: 60px;
+ background-color: var(--bgd-footer-color)
+
+}
+.adress-white {
+    color: #FFFFFF;
+    line-height: 1.71;
+}
+.page {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.page-button {
+    padding-bottom: 34px;
 }
